@@ -1,0 +1,706 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Indian_Movies_Box_Office' inline='true' name='federated.1q8le1l1iokjfn1b574xj0i93vuu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Indian_Movies_Box_Office' name='textscan.1jydu2p0cvl8zh10lclat13y4mft'>
+            <connection class='textscan' directory='C:/Users/praka/Downloads' filename='Indian_Movies_Box_Office.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jydu2p0cvl8zh10lclat13y4mft' name='Indian_Movies_Box_Office.csv' table='[Indian_Movies_Box_Office#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Movie Title' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Language' ordinal='2' />
+            <column datatype='string' name='Genre' ordinal='3' />
+            <column datatype='integer' name='Budget (Cr ₹)' ordinal='4' />
+            <column datatype='integer' name='Box Office Collection (Cr ₹)' ordinal='5' />
+            <column datatype='string' name='Verdict' ordinal='6' />
+            <column datatype='string' name='Lead Actor(s)' ordinal='7' />
+            <column datatype='string' name='Director' ordinal='8' />
+            <column datatype='real' name='IMDb Rating' ordinal='9' />
+            <column datatype='integer' name='Duration (min)' ordinal='10' />
+            <column datatype='string' name='OTT Platform' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movie Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movie Title]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Movie Title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Language]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Language</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budget (Cr ₹)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budget (Cr ₹)]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Budget (Cr ₹)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Box Office Collection (Cr ₹)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Box Office Collection (Cr ₹)]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Box Office Collection (Cr ₹)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verdict]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Verdict</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Actor(s)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lead Actor(s)]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Lead Actor(s)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Director]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Director</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMDb Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IMDb Rating]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>IMDb Rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration (min)]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>Duration (min)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OTT Platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OTT Platform]</local-name>
+            <parent-name>[Indian_Movies_Box_Office.csv]</parent-name>
+            <remote-alias>OTT Platform</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Box Office Collection (Cr ₹)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Budget (Cr ₹)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Indian_Movies_Box_Office.csv' datatype='table' name='[__tableau_internal_object_id__].[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]' role='measure' type='quantitative' />
+      <column-instance column='[Box Office Collection (Cr ₹)]' derivation='Sum' name='[sum:Box Office Collection (Cr ₹):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Budget (Cr ₹)]' derivation='Sum' name='[sum:Budget (Cr ₹):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/praka/OneDrive/Documents/My Tableau Repository/Datasources/#TableauTemp_0585bhe05cq0cl17exoxs0bduo6i.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/22/2025 05:48:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Movie Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Movie Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Movie Title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Language</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Language]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Language</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Budget (Cr ₹)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Budget (Cr ₹)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Budget (Cr ₹)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Box Office Collection (Cr ₹)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Box Office Collection (Cr ₹)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Box Office Collection (Cr ₹)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Verdict</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Verdict]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Verdict</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Actor(s)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead Actor(s)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lead Actor(s)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Director</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IMDb Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IMDb Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IMDb Rating</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration (min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Duration (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration (min)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OTT Platform</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OTT Platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OTT Platform</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Indian_Movies_Box_Office.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1q8le1l1iokjfn1b574xj0i93vuu].[sum:Box Office Collection (Cr ₹):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1q8le1l1iokjfn1b574xj0i93vuu]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1q8le1l1iokjfn1b574xj0i93vuu].[sum:Budget (Cr ₹):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Indian_Movies_Box_Office.csv' id='Indian_Movies_Box_Office.csv_642CB23B1338457B9D64B5AA08B970EC'>
+            <properties context=''>
+              <relation connection='textscan.1jydu2p0cvl8zh10lclat13y4mft' name='Indian_Movies_Box_Office.csv' table='[Indian_Movies_Box_Office#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Movie Title' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='string' name='Language' ordinal='2' />
+                  <column datatype='string' name='Genre' ordinal='3' />
+                  <column datatype='integer' name='Budget (Cr ₹)' ordinal='4' />
+                  <column datatype='integer' name='Box Office Collection (Cr ₹)' ordinal='5' />
+                  <column datatype='string' name='Verdict' ordinal='6' />
+                  <column datatype='string' name='Lead Actor(s)' ordinal='7' />
+                  <column datatype='string' name='Director' ordinal='8' />
+                  <column datatype='real' name='IMDb Rating' ordinal='9' />
+                  <column datatype='integer' name='Duration (min)' ordinal='10' />
+                  <column datatype='string' name='OTT Platform' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Indian_Movies_Box_Office' name='federated.1q8le1l1iokjfn1b574xj0i93vuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q8le1l1iokjfn1b574xj0i93vuu'>
+            <column datatype='integer' name='[Box Office Collection (Cr ₹)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Budget (Cr ₹)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Movie Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Movie Title]' derivation='None' name='[none:Movie Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Box Office Collection (Cr ₹)]' derivation='Sum' name='[sum:Box Office Collection (Cr ₹):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Budget (Cr ₹)]' derivation='Sum' name='[sum:Budget (Cr ₹):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8le1l1iokjfn1b574xj0i93vuu].[sum:Box Office Collection (Cr ₹):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q8le1l1iokjfn1b574xj0i93vuu].[sum:Budget (Cr ₹):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1q8le1l1iokjfn1b574xj0i93vuu].[Multiple Values]</rows>
+        <cols>([federated.1q8le1l1iokjfn1b574xj0i93vuu].[none:Year:ok] / ([federated.1q8le1l1iokjfn1b574xj0i93vuu].[none:Movie Title:nk] / [federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{6F812749-FF7D-485A-A72A-82A31182A1D8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1q8le1l1iokjfn1b574xj0i93vuu].[:Measure Names]</field>
+            <field>[federated.1q8le1l1iokjfn1b574xj0i93vuu].[none:Movie Title:nk]</field>
+            <field>[federated.1q8le1l1iokjfn1b574xj0i93vuu].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F441CDF7-4A18-4043-8EBC-FB7114A8031C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
